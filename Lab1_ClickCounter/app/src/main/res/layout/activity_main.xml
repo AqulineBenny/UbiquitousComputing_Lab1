@@ -9,16 +9,16 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/button"
         android:onClick="onClick"
         android:text="Button" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/textView"
         android:text="" />
 
 </LinearLayout>

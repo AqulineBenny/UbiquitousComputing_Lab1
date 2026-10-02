@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Guess the number between 1 and 30"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editGuess"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="32dp"
+        android:hint="Enter your guess"
+        android:inputType="number"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editGuess"
+        android:layout_marginTop="16dp"
+        android:text="Guess"
+        android:onClick="onGuess" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"
+        android:layout_below="@+id/btnGuess"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textSize="18sp"
+        android:gravity= "center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGuesses"
+        android:layout_below="@+id/tvResult"
+        android:layout_marginTop="16dp"
+        android:text="Number of guesses: 0"
+        android:textSize="16sp"
+        android:gravity="center" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlayAgain"
+        android:layout_alignParentBottom="true"
+        android:text="Play Again"
+        android:visibility="gone"
+        android:onClick="onPlayAgain"/>
+
+</RelativeLayout>
